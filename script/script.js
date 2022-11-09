@@ -1,4 +1,4 @@
-[
+let arr = [
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -112,4 +112,18 @@
 		color: 'blue'
 	}
 ];
+
+
+arr.forEach((element => {
+	eleContainer = document.querySelector(".cards")
+	let card = document.createElement("div")
+	card.classList.add('card')
+	eleContainer.append(card)
+	let icona = document.createElement('i')
+	icona.classList.add('fa-solid')
+	icona.classList.add(`fa-${element.name}`)
+	card.append(icona)
+
+}));
+
 
