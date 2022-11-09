@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: lightblue;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+h2 {
+    color: white;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card-body {
+    width: 20rem;
+    height: 8rem;
+}
