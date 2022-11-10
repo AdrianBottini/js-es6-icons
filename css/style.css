@@ -4,36 +4,77 @@
     box-sizing: border-box;
 }
 
-h1 {
-    color: lightblue;
+body {
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
 }
 
-header {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    background-color: lightblue;
-    padding: 20px;
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
-h2 {
+.container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.header-top {
+    font-family: 'Acme', sans-serif;
+    color: rgb(41, 177, 221);;
+    padding: 10px;
+}
+
+.header-bottom {
+    background-color: rgb(41, 177, 221);
     color: white;
+    padding: 10px;
 }
 
-form {
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
+.logo h1 {
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.search {
+    text-align: center;
+}
+
+.search h2 {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+#type-filter {
+    vertical-align: middle;
 }
 
 main {
+    padding: 40px 0;
+}
+
+#icons-container {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
-.card-body {
-    width: 20rem;
-    height: 8rem;
+.box {
+    flex-basis: calc(20% - 40px);
+    margin: 20px;
+    padding: 20px;
+    background: rgb(245, 245, 245);
+    border-radius: 10px;
+    text-align: center;
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0, 0.5));
+}
+
+.box i {
+    font-size: 200%;
+    margin-bottom: 10px;
 }
